@@ -1,27 +1,9 @@
 {
-  "version": 2,
   "builds": [
     {
-      "src": "index.html",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/services",
-      "dest": "/services.html"
-    },
-    {
-      "src": "/team",
-      "dest": "/team.html"
-    },
-    {
-      "src": "/publications",
-      "dest": "/publications.html"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "src": "vite.config.mjs",
+      "use": "@vercel/static-build",
+      "config": {}
     }
   ]
 }
